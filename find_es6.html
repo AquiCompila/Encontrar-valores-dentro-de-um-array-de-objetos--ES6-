@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    //nosso array de usuários
+    const usuarios = [
+        {id: 1, nome: 'carla', idade: '23'},
+        {id: 2, nome: 'larissa', idade: '15'},
+        {id: 3, nome: 'pedro', idade: '36'},
+        {id: 4, nome: 'laura', idade: '18'}
+    ]
+
+    let maisDeTrinta = usuarios => {
+        return usuarios.idade < 30
+    }
+
+    console.log(usuarios.find(maisDeTrinta))
+</script>
+</body>
+</html>
